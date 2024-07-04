@@ -1,25 +1,30 @@
-<html>
-    <head>
-        <meta charset="UTF-8">
-        <title>MaXwEllDeN</title>
-        
-    </head>
-    <style>
-body {
-    background-color: #252525;
-    background-size: cover;
-    font-family: Montserrat;
-}
-
-footer {
-    display: block;
-    padding-top: 15px;
-    text-align: center;
-    color: #ddd;
-    font-weight: normal;
-    text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.2);
-
-}
-    </style>
-    <footer>Hello folks!</footer>
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>MaXwEllDeN</title>
+      <link rel="stylesheet" href="style.css" />
+   </head>
+   <body>
+      <h1 class="carousel-title">Já viu minha gatinha ?</h1>
+      <div class="gallery" id="gallery">
+      </div>
+   </body>
+   <script>
+      function loadPictures()
+      {
+          const image_count = 16;
+           
+          for (var i = 1; i <= image_count; i++) {
+              let img = document.createElement("img");
+              img.setAttribute("src", "images/tesla"+ i +".jpg");
+              document.getElementById("gallery").appendChild(img);
+          }
+      
+      }
+      
+      loadPictures();
+   </script>
 </html>
